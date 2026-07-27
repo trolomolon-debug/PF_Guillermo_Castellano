@@ -1,0 +1,60 @@
+{
+  "_meta": "IDIOMA: Español (defaultLocale). Este archivo es la fuente de verdad: cualquier clave nueva se añade aquí primero y luego en en.json.",
+  "_convencion": "Claves planas con puntos como separador visual, NO anidadas. El acceso es t['nav.home'], no t.nav.home.",
+
+  "_1_global": "── Textos compartidos por todo el sitio ──",
+  "site.title": "StartupGo Global",
+  "site.description": "Diseño web, internacionalización y optimización de contenidos para empresas que crecen en varios idiomas.",
+
+  "_2_nav": "── Navegación principal. Deben ser cortos: se muestran en línea. ──",
+  "nav.home": "Inicio",
+  "nav.services": "Servicios",
+  "nav.contact": "Contacto",
+  "nav.langSwitch": "Cambiar idioma",
+  "nav.aria": "Navegación principal",
+
+  "_3_hero": "── Portada. hero.title es el <h1>: único por página y con la keyword principal. ──",
+  "hero.title": "Impulsamos la presencia digital de tu empresa",
+  "hero.text": "En StartupGo Global ayudamos a marcas y negocios a crear experiencias web claras, modernas y preparadas para crecer en varios idiomas.",
+  "hero.cta": "Solicitar información",
+
+  "_4_services": "── Las tres tarjetas de servicio. Al añadir una cuarta, replicar el par .title/.text en AMBOS idiomas. ──",
+  "services.title": "Servicios",
+  "services.badge": "Nuevo",
+  "services.design.title": "Diseño y maquetación web",
+  "services.design.text": "Creamos interfaces claras, accesibles y adaptadas a distintos dispositivos.",
+  "services.i18n.title": "Internacionalización de contenidos",
+  "services.i18n.text": "Preparamos sitios web para trabajar de forma ordenada en varios idiomas.",
+  "services.optimization.title": "Optimización y mejora de contenidos",
+  "services.optimization.text": "Revisamos estructura, calidad del contenido y experiencia de usuario.",
+
+  "_5_contact": "── Sección de contacto ──",
+  "contact.title": "Contacto",
+  "contact.text": "Cuéntanos qué necesita tu empresa y te responderemos lo antes posible.",
+
+  "_6_form": "── Etiquetas del formulario. Cada label necesita su for= apuntando al id del input. ──",
+  "form.name": "Nombre completo",
+  "form.email": "Correo electrónico",
+  "form.email.help": "Introduce un correo válido, por ejemplo nombre@empresa.com",
+  "form.company": "Nombre empresa",
+  "form.service": "Servicio de interés",
+  "form.message": "Mensaje",
+  "form.submit": "Enviar solicitud",
+
+  "_7_formOptions": "── <option> del select form.service. El value= va en inglés en el HTML; esto es solo lo que ve el usuario. ──",
+  "form.service.placeholder": "Selecciona una opción",
+  "form.service.design": "Diseño y maquetación web",
+  "form.service.i18n": "Internacionalización de contenidos",
+  "form.service.optimization": "Optimización de contenidos",
+  "form.service.other": "Otro",
+
+  "_8_formState": "── Validación y respuesta. Si no los traduces, aparecen en español dentro del sitio en inglés. ──",
+  "form.required": "Este campo es obligatorio",
+  "form.invalidEmail": "El formato del correo no es válido",
+  "form.sending": "Enviando…",
+  "form.success": "Hemos recibido tu solicitud. Te responderemos en breve.",
+  "form.error": "No se ha podido enviar. Inténtalo de nuevo o escríbenos directamente.",
+
+  "_9_footer": "── {year} se sustituye en tiempo de render, no lo escribas fijo. ──",
+  "footer.text": "© {year} StartupGo Global. Todos los derechos reservados."
+}

@@ -1,0 +1,60 @@
+{
+  "_meta": "LANGUAGE: English. Mirror of es.json — never add a key here that doesn't exist there. Key order kept identical to make diffs readable.",
+  "_convencion": "Flat dot-separated keys, NOT nested. Access is t['nav.home'], not t.nav.home.",
+
+  "_1_global": "── Site-wide strings ──",
+  "site.title": "StartupGo Global",
+  "site.description": "Web design, internationalisation and content optimisation for companies growing across multiple languages.",
+
+  "_2_nav": "── Main navigation. Keep short: rendered inline. ──",
+  "nav.home": "Home",
+  "nav.services": "Services",
+  "nav.contact": "Contact",
+  "nav.langSwitch": "Switch language",
+  "nav.aria": "Main navigation",
+
+  "_3_hero": "── Landing hero. hero.title is the <h1>: one per page, carries the main keyword. ──",
+  "hero.title": "We grow your company's digital presence",
+  "hero.text": "At StartupGo Global we help brands and businesses build clear, modern web experiences that are ready to scale across languages.",
+  "hero.cta": "Request information",
+
+  "_4_services": "── The three service cards. Adding a fourth means replicating the .title/.text pair in BOTH files. ──",
+  "services.title": "Services",
+  "services.badge": "New",
+  "services.design.title": "Web design and layout",
+  "services.design.text": "We build clear, accessible interfaces that adapt to any device.",
+  "services.i18n.title": "Content internationalisation",
+  "services.i18n.text": "We prepare websites to handle multiple languages in a structured way.",
+  "services.optimization.title": "Content optimisation",
+  "services.optimization.text": "We review structure, content quality and user experience.",
+
+  "_5_contact": "── Contact section ──",
+  "contact.title": "Contact",
+  "contact.text": "Tell us what your company needs and we'll get back to you as soon as possible.",
+
+  "_6_form": "── Form labels. Each label needs a for= matching its input id. ──",
+  "form.name": "Full name",
+  "form.email": "Email address",
+  "form.email.help": "Enter a valid email, for example name@company.com",
+  "form.company": "Company name",
+  "form.service": "Service of interest",
+  "form.message": "Message",
+  "form.submit": "Send request",
+
+  "_7_formOptions": "── <option> values for the form.service select. The HTML value= stays in English; this is display text only. ──",
+  "form.service.placeholder": "Select an option",
+  "form.service.design": "Web design and layout",
+  "form.service.i18n": "Content internationalisation",
+  "form.service.optimization": "Content optimisation",
+  "form.service.other": "Other",
+
+  "_8_formState": "── Validation and submission feedback. Untranslated, these leak Spanish into the English site. ──",
+  "form.required": "This field is required",
+  "form.invalidEmail": "That email format isn't valid",
+  "form.sending": "Sending…",
+  "form.success": "We've received your request. We'll be in touch shortly.",
+  "form.error": "Couldn't send that. Please try again or email us directly.",
+
+  "_9_footer": "── {year} is substituted at render time — never hardcode it. ──",
+  "footer.text": "© {year} StartupGo Global. All rights reserved."
+}

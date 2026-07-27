@@ -1,5 +1,5 @@
-import es from './en.json';
-import en from './es.json';
+import en from './en.json';
+import es from './es.json';
 
 export const languages = {
   es,

@@ -1,13 +1,16 @@
 ---
-import { useTranslations } from '../../i18n';
-import Layout from '../../layouts/MainLayout.astro';
+import MainLayout from "../../layouts/MainLayout.astro";
+import Header from "../../components/Header.astro";
+import Hero from "../../components/Hero.astro";
 
-const t = useTranslations('en');
+import { useTranslations } from "../../i18n";
+
+const t = useTranslations("en");
 ---
 
-<Layout title={t('site.title')} description={t('site.description')}>
-	<main>
-		<h1>{t('hero.title')}</h1>
-		<p>{t('hero.text')}</p>
-	</main>
-</Layout>
+<MainLayout title={t("site.title")} description={t("site.description")}>
+    <Header />
+    <main>
+        <Hero />
+    </main>
+</MainLayout>

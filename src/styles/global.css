@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+@utility contenedor {
+    width: min(100% - 2rem, 1100px);
+    margin-inline: auto;
+}
+
+@media (min-width: 640px){
+    .contenedor {
+        width: min(100% - 4rem, 1100px);
+    }
+}

@@ -1,0 +1,22 @@
+---
+import { useTranslations, defaultLang, type Lang } from "../i18n";
+
+const lang = (Astro.currentLocale ?? "es") as Lang;
+const t = useTranslations(lang);
+---
+<section id="inicio" class="py-16 md:py-24">
+    <div class="contenedor">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl max-w-2xl mb-4 font-bold text-blue-900">
+            {t("hero.title")}
+        </h1>
+        <p class="max-w-2xl mb-6 text-gray-600 text-lg">{t("hero.text")}</p> 
+        
+        <a
+        href="#contacto"
+        >
+        {t("hero.cta")}
+    </a>
+
+    </div>
+
+</section>

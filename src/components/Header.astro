@@ -1,17 +1,46 @@
 ---
-
-import {useTranslations} from '../i18n';
+import { useTranslations } from "../i18n";
 
 const lang = (Astro.currentLocale ?? "es") as "es" | "en";
 const t = useTranslations(lang);
+const altLang = lang === "es" ? "en" : "es";
+const rutaSinLocale = Astro.url.pathname.replace(/^\/(es|en)/, "") || "/";
+const altHref = `/${altLang}${rutaSinLocale}`;
+const base = `/${lang}/`;
+
+const enlaces = [
+    { href: `${base}#inicio`, label: t("nav.home") },
+    { href: `${base}#servicios`, label: t("nav.services") },
+    { href: `${base}#contacto`, label: t("nav.contact") },
+];
 ---
+
 <header class="bg-white border-b border-slate-200 py-4">
-    <div class="W-[min(100%-2rem,1100px)] mx-auto flex flex-wrap justify-between items-center gap-x-6 gap-y-3">
-        <p>{t("site.title")}</p>
+    <div
+        class="W-[min(100%-2rem,1100px)] mx-auto flex flex-wrap justify-between items-center gap-x-6 gap-y-3"
+    >
+        <p class="text-2xl font-bol text-blue-900">
+            <a href={base} class="hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-700">
+                {t("site.title")}
+            </a>
+        </p>
     </div>
-    <nav>
-        <ul>
-            <li></li>
-        </ul>
-    </nav>
+   
+       
+    
 </header>
+<nav aria-label={t("nav.aria")} class="order-3 w-full sm:order-0 sm:w-auto">
+     <ul class="flex flex-wrap gap-x-6 gap-y-2">
+        {
+            enlaces.map(({href, label}) => (
+       
+            <li>
+            <a href={href}>
+                {label}
+
+            </a>
+            </li>
+            ))
+         }
+        </ul>
+</nav>

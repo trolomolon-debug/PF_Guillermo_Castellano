@@ -1,0 +1,41 @@
+---
+import { useTranslations, defaultLang, type Lang, type TranslationKey } from "../i18n";
+
+const lang = (Astro.currentLocale ?? "es") as Lang;
+const t = useTranslations(lang);
+
+const servicios:{
+    titulo: TranslationKey;
+    texto: TranslationKey;
+    destacado?: boolean;
+}[] = [
+    {titulo: "services.design.title", texto: "services.design.text"},
+    {titulo: "services.i18n.title", texto: "services.i18n.text"},
+    {titulo: "services.optimization.title", texto: "services.optimization.text"}
+]
+
+const claseTarjeta = "relative bg-white border border-slate-200 rounded-2xl p-6 shadow-[0_10px_30px_rgba(15,23,42,0.08)]";
+---
+
+<section id="servicios" class="py-10 md:py-16">
+    <div class="container">
+        <h2>{t("services.title")}</h2>
+        <div class="grid gap-6 md:grid-cols-3">
+            {
+                servicios.map(({titulo, texto, destacado}) => (
+                    <article class={claseTarjeta}>
+                        { destacado && (
+                            <span class="absolute top-4 right-4 rounded-full bg-orange-500 px-3 py1 text-xs font-bold text-white">
+                            {t("services.badge")}
+                            </span>
+                        ) }
+
+                    </article>
+                ))
+            }
+
+        </div>
+    </div>
+
+</section>
+

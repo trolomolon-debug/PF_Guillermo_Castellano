@@ -2,6 +2,9 @@
 import MainLayout from "../../layouts/MainLayout.astro";
 import Header from "../../components/Header.astro";
 import Hero from "../../components/Hero.astro";
+import Services from "../../components/Services.astro";
+import Footer from "../../components/ContactForm.astro";
+import ContactForm from "../../components/ContactForm.astro";
 
 import { useTranslations } from "../../i18n";
 
@@ -12,5 +15,8 @@ const t = useTranslations("en");
     <Header />
     <main>
         <Hero />
+        <Services />
+        <ContactForm />
+        <Footer />
     </main>
 </MainLayout>

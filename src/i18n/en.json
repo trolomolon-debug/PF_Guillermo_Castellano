@@ -33,7 +33,9 @@
   "contact.text": "Tell us what your company needs and we'll get back to you as soon as possible.",
 
   "_6_form": "── Form labels. Each label needs a for= matching its input id. ──",
-  "form.name": "Full name",
+  "form.name": "First name",
+  "form.lastname": "Last name",
+  "form.phone": "Phone number",
   "form.email": "Email address",
   "form.email.help": "Enter a valid email, for example name@company.com",
   "form.company": "Company name",

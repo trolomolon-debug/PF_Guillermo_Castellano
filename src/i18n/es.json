@@ -33,7 +33,9 @@
   "contact.text": "Cuéntanos qué necesita tu empresa y te responderemos lo antes posible.",
 
   "_6_form": "── Etiquetas del formulario. Cada label necesita su for= apuntando al id del input. ──",
-  "form.name": "Nombre completo",
+  "form.name": "Nombre",
+  "form.lastname": "Apellidos",
+  "form.phone": "Número de contacto",
   "form.email": "Correo electrónico",
   "form.email.help": "Introduce un correo válido, por ejemplo nombre@empresa.com",
   "form.company": "Nombre empresa",

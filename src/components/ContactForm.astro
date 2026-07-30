@@ -2,6 +2,18 @@
 import { useTranslations, type Lang } from "../i18n";
 const lang = (Astro.currentLocale ?? "es") as Lang;
 const t = useTranslations(lang);
+const claseCampo =
+    "w-full rounded-lg border border-slate-200 p-3 focus:border-blue-700 focus:outline-2 focus:outline-offset-0 focus:outline-blue-700";
+
+const formspreeId = import.meta.env.PUBLIC_FORMSPREE_ID;
+const endpoint = formspreeId ? `https://formspree.io/f/${formspreeId}` : "";
+
+const opciones = [
+    { value: "design", label: t("form.service.design") },
+    { value: "i18n", label: t("form.service.i18n") },
+    { value: "optimization", label: t("form.service.optimization") },
+    { value: "other", label: t("form.service.other") },
+];
 ---
 
 <section id="contacto" class="py-10 md:py-16">
